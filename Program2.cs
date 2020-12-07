@@ -1,15 +1,16 @@
-﻿using System;
+using System;
 
-namespace ConsoleApp20
+namespace ConsoleApp27
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DateTime dt = new DateTime(2020, 11, 25);
-            Console.WriteLine(dt.ToString("dddd"));
-            Console.ReadLine();
-            //Результат: среда
+            Calendar calendar = new Calendar();
+            calendar["day"] = 15;
+            calendar["month"] = 10;
+            calendar["year"] = 20;
+            Console.WriteLine(calendar.Calculate(10, 9, 20));
         }
     }
 }
